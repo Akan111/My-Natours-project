@@ -1,0 +1,120 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777;
+    line-height: 1.7;
+    padding: 30px;
+}
+
+.header {
+    background-image: linear-gradient(to right bottom, #7ed56fcc, #28b485cc), url(../img/hero.jpg);
+    height: 95vh;
+    background-position: top;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+}
+
+.logo-box {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+   
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 35px;
+    animation: moveInFromLeft 2s ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    letter-spacing: 17.4px;
+    animation: moveInFromRight 2s ease-out;
+}
+
+@keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+    80% {
+        transform: translateX(20px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes moveInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px)
+    }
+    80% {
+        transform: translateX(-20px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 5px;
+    padding: 15px 40px;
+    display: inline-block;
+    transition: all .2s ease-out;
+
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+
